@@ -67,6 +67,13 @@ display: none;
 
 
 article {
+
+	.list-group-item {
+		background-color: lighten($base-color, 25%);
+		opacity: 0.9;
+		border: 1px solid $base-color;
+	}
+	
 	h1 { @include fonts ($headline-size);
 	text-align: center;
 		@media (min-width: $screen-sm-min) {
@@ -227,7 +234,7 @@ article {
 		h1 {
 		@include titles (41%);
 			@media (min-width: $screen-sm-min) {
-				@include titles (16%);
+				@include titles (30%);
 			}
 			
 			@media (min-width: $screen-md-min) {
@@ -237,16 +244,44 @@ article {
 			}	
 		}
 		
+		p {
+		text-align: left;
+			@media (min-width: $screen-sm-min) {
+				text-align: center;
+			}
+			
+			@media (min-width: $screen-md-min) {
+				text-align: left;
+			}
+		}
+		
 		h2 {
-		text-align: center;
-		font-size: $paragraph-size;
+		text-align: left;
+		font-size: $paragraph-size * 1.5 ;
 		width: 60%;
-		margin: $spacer + 15 auto $spacer + 5 auto;
+		
+			
+			@media (min-width: $screen-sm-min) {
+				text-align: center;
+				margin: $spacer + 15 auto $spacer + 5 auto;
+			}
 		
 			@media (min-width: $screen-md-min) {
 				text-align: left;
 				margin-left: 0;
 				margin-top: 0;
+			}
+		}
+		
+		h3 {
+			text-align: left;
+			font-size: $paragraph-size * 1.1 ;
+			@media (min-width: $screen-sm-min) {
+				text-align: center;
+			}
+			
+			@media (min-width: $screen-md-min) {
+				text-align: left;
 			}
 		}
 		
