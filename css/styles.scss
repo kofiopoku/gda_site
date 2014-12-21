@@ -72,6 +72,31 @@ article {
 		background-color: lighten($base-color, 25%);
 		opacity: 0.9;
 		border: 1px solid $base-color;
+		
+		a {
+		color: black;
+		text-decoration: underline;
+		}
+		
+		a:hover {
+		color: $medium-shade;
+		}
+	}
+	
+	.modal-body {
+		ul {
+			padding: 0;
+		}
+		
+		li {
+			list-style: none;
+			line-height: 270%;
+			border-bottom: 1px solid $base-color;
+			
+			&:last-child {
+			border-bottom: none;
+			}
+		}
 	}
 	
 	h1 { @include fonts ($headline-size);

@@ -25,6 +25,19 @@ article .list-group-item {
   background-color: #b6e5e1;
   opacity: 0.9;
   border: 1px solid #58c3bb; }
+  article .list-group-item a {
+    color: black;
+    text-decoration: underline; }
+  article .list-group-item a:hover {
+    color: #30857f; }
+article .modal-body ul {
+  padding: 0; }
+article .modal-body li {
+  list-style: none;
+  line-height: 270%;
+  border-bottom: 1px solid #58c3bb; }
+  article .modal-body li:last-child {
+    border-bottom: none; }
 article h1 {
   font-family: "Novecentosanswide-Bold", helvetica, arial, sans-serif;
   font-size: 4.5em;
